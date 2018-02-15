@@ -9,3 +9,8 @@ TEST(FizzBuzzTest, MultipleOfThreeIsFizz) {
     ASSERT_EQ("Fizz", FizzBuzz::print(3));
     ASSERT_EQ("Fizz", FizzBuzz::print(9));
 }
+
+TEST(FizzBuzzTest, MultipleOfFiveIsBuzz) {
+    ASSERT_EQ("Buzz", FizzBuzz::print(5));
+    ASSERT_EQ("Buzz", FizzBuzz::print(25));
+}
