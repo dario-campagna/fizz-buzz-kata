@@ -16,3 +16,7 @@ TEST(FizzBuzzTest, MultipleOfThreeIsFizz) {
 TEST(FizzBuzzTest, MultipleOfFiveIsBuzz) {
     check("Buzz", 25);
 }
+
+TEST(FizzBuzzTest, MultipleOfThreeAndFiveIsFizzBuzz) {
+    check("FizzBuzz", 15);
+}

@@ -1,12 +1,17 @@
 #include "fizzbuzz.h"
 
 std::string FizzBuzz::print(int number) {
+    std::string text = "";
     if (isMultipleOfThree(number)) {
-        return "Fizz";
-    } else if (isMultipleOfFive(number)) {
-        return "Buzz";
+        text += "Fizz";
     }
-    return std::to_string(number);
+    if (isMultipleOfFive(number)) {
+        text += "Buzz";
+    }
+    if (text.empty()){
+        text = std::to_string(number);
+    }
+    return text;
 }
 
 bool FizzBuzz::isMultipleOfFive(int number) { return number % 5 == 0; }
