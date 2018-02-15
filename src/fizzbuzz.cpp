@@ -1,6 +1,14 @@
 #include "fizzbuzz.h"
+#include <algorithm>
 
-std::string FizzBuzz::print(int number) {
+
+std::vector<std::string> FizzBuzz::print(std::vector<int> numbers) {
+    std::vector<std::string> result(numbers.size());
+    std::transform(numbers.begin(), numbers.end(), result.begin(), FizzBuzz::convert);
+    return result;
+}
+
+std::string FizzBuzz::convert(int number) {
     std::string text = "";
     if (isMultipleOfThree(number)) {
         text += "Fizz";

@@ -2,9 +2,15 @@
 #define FIZZBUZZ_FIZZBUZZ_H
 
 #include <string>
+#include <vector>
 
-struct FizzBuzz {
-    static std::string print(int number);
+class FizzBuzz {
+public:
+    static std::vector<std::string> print(std::vector<int> numbers);
+
+    static std::string convert(int number);
+
+private:
 
     static bool isMultipleOfThree(int number);
 
