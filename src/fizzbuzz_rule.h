@@ -5,7 +5,7 @@
 
 class FizzBuzzRule: public Rule {
 public:
-    FizzBuzzRule(Rule* rule);
+    explicit FizzBuzzRule(Rule* rule);
     std::string applyTo(int number) override ;
 
 private:

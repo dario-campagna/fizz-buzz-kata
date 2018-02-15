@@ -3,18 +3,14 @@
 
 #include <string>
 #include <vector>
+#include "rule.h"
 
 class FizzBuzz {
 public:
-    static std::vector<std::string> print(std::vector<int> numbers);
-
-    static std::string convert(int number);
-
+    FizzBuzz(Rule* rule);
+    std::vector<std::string> print(std::vector<int> numbers);
 private:
-
-    static bool isMultipleOfThree(int number);
-
-    static bool isMultipleOfFive(int number);
+    Rule* rule;
 };
 
 #endif //FIZZBUZZ_FIZZBUZZ_H

@@ -5,7 +5,7 @@
 
 class Rule {
 public:
-    virtual std::string applyTo(int number) {return "";}
+    virtual std::string applyTo(int number) {return "noooo";}
 };
 
 #endif //FIZZBUZZ_RULE_H

@@ -1,5 +1,5 @@
-#ifndef FIZZBUZZ_FIZZ_RULE_H
-#define FIZZBUZZ_FIZZ_RULE_H
+#ifndef FIZZBUZZ_BUZZ_RULE_H
+#define FIZZBUZZ_BUZZ_RULE_H
 
 #include <string>
 #include "rule.h"
@@ -13,4 +13,4 @@ private:
     Rule* rule;
 };
 
-#endif //FIZZBUZZ_FIZZ_RULE_H
+#endif //FIZZBUZZ_BUZZ_RULE_H
