@@ -1,3 +1,3 @@
-# FizzBuzz Kata
+# Fizz-Buzz Kata
 
-FizzBuzz Kata implemented in C++ using algorithm transform (and with Open/Closed Principle in mind).
+Fizz-Buzz Kata implemented in C++ using algorithm transform (and with Open/Closed Principle in mind).
