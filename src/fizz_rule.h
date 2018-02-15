@@ -2,15 +2,15 @@
 #define FIZZBUZZ_FIZZ_RULE_H
 
 #include <string>
-#include "default_rule.h"
+#include "rule.h"
 
-class FizzRule {
+class FizzRule: public Rule {
 public:
-    FizzRule(DefaultRule rule);
-    std::string applyTo(int number);
+    explicit FizzRule(Rule* rule);
+    std::string applyTo(int number) override ;
 
 private:
-    DefaultRule rule;
+    Rule* rule;
 };
 
 #endif //FIZZBUZZ_FIZZ_RULE_H
