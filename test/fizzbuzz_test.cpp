@@ -1,16 +1,18 @@
 #include "gtest/gtest.h"
 #include "../src/fizzbuzz.h"
 
+void check(std::string expected, int number) {
+    ASSERT_EQ(expected, FizzBuzz::print(number));
+}
+
 TEST(FizzBuzzTest, DefaultIsGivenNumber) {
-	ASSERT_EQ("1", FizzBuzz::print(1));
+    check("1", 1);
 }
 
 TEST(FizzBuzzTest, MultipleOfThreeIsFizz) {
-    ASSERT_EQ("Fizz", FizzBuzz::print(3));
-    ASSERT_EQ("Fizz", FizzBuzz::print(9));
+    check("Fizz", 9);
 }
 
 TEST(FizzBuzzTest, MultipleOfFiveIsBuzz) {
-    ASSERT_EQ("Buzz", FizzBuzz::print(5));
-    ASSERT_EQ("Buzz", FizzBuzz::print(25));
+    check("Buzz", 25);
 }
